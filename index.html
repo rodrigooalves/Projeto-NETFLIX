@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Netflix</title>
+</head>
+<body>
+    <header>
+        <div class="container-navegacao">
+            <img src="./assets/netflix (1).png" />
+            <nav>
+                <ul>
+                    <li>Início</li>
+                    <li>Filmes</li>
+                    <li>Séries</li>
+                    <li>Bombando</li>
+                    <li>Minha lista</li>
+                    <li>Navegar por idioma</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="inicio"></section>
+        <section>
+            <h2>Populares</h2>
+            <div class="carrossel-container">
+                <button onclick="goLeft('popular')"> < </button>
+                <div class="carrossel popular"></div>
+                <button onclick="goRight('popular')"> > </button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Bem avaliados</h2>
+            <div class="carrossel-container">
+                <button onclick="goLeft('top_rated')"> < </button>
+                <div class="carrossel top_rated"></div>
+                <button onclick="goRight('top_rated')"> > </button>
+            </div>
+        </section>
+        <section>
+            <h2>Em breve</h2>
+            <div class="carrossel-container">
+                <button onclick="goLeft('upcoming')"> < </button>
+                <div class="carrossel upcoming"></div>
+                <button onclick="goRight('upcoming')"> > </button>
+            </div>
+        </section>
+        <section>
+            <h2>Recentes</h2>
+            <div class="carrossel-container">
+                <button onclick="goLeft('now_playing')"> < </button>
+                <div class="carrossel now_playing"></div>
+                <button onclick="goRight('now_playing')"> > </button>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./scripts.js"></script>
+</body>
+</html>

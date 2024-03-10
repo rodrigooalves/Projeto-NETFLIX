@@ -1,0 +1,98 @@
+:root {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: white;
+}
+
+header {
+    padding-inline: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-navegacao {
+    align-items: center;
+    display: flex;
+    gap: 3rem;
+}
+
+.container-navegacao img {
+    width: 8rem;
+}
+
+.container-navegacao ul {
+    list-style: none;
+    font-size: 1.6rem;
+    display: flex;
+    gap: 2rem;
+}
+
+main {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.carrossel-container {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+.carrossel-container button {
+    padding: 1rem;
+    background-color: rgba(33, 33, 33, 0.708);
+    color: #fff;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 100%;
+    cursor: pointer;
+    position: absolute;
+}
+
+.carrossel-container button:last-child {
+    right: 0;
+}
+
+.carrossel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.carrossel::-webkit-scrollbar {
+    display: none;
+} 
+
+.carrossel img {
+    width: 18rem;
+}
+
+.good {
+    color: rgb(66, 255, 100)
+}
+.regular {
+    color: rgb(255, 240, 75)
+}
+.bad {
+    color: rgb(177, 0, 0)
+}
